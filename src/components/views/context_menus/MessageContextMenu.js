@@ -215,7 +215,7 @@ module.exports = React.createClass({
         // XXX: if we use room ID, we should also include a server where the event can be found (other than in the domain of the event ID)
         permalinkButton = (
             <div className="mx_MessageContextMenu_field">
-                <a href={ "https://riot.igalia.com/#/" + this.props.mxEvent.getRoomId() +"/"+ this.props.mxEvent.getId() }
+                <a href={ "https://riot.igalia.com/#/room/" + this.props.mxEvent.getRoomId() +"/"+ this.props.mxEvent.getId() }
                   target="_blank" rel="noopener" onClick={ this.closeMenu }>{ _t('Permalink') }</a>
             </div>
         );
